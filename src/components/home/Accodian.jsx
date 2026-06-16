@@ -6,10 +6,10 @@ import Icons from "../common/Icons";
 import Butten from "../common/Butten";
 
 const Accodian = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(2);
 
   const toggelAccodion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex(index);
   };
   return (
     <section className="bg-cloud-white px-4 pt-114.5 -mt-81.75 -mb-75 pb-50">
@@ -53,8 +53,11 @@ const Accodian = () => {
                 }`}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <div className="flex flex-row justify-between w-full   border-light-gray py-4 cursor-pointer">
-                  <h3 className="font-medium tex-[18px] w-full leading-[155%] tracking-[-1%] text-Deep-nav ">
+                <div
+                  className="flex justify-between w-full py-4 cursor-pointer"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <h3 className="font-medium tex-[18px] w-full leading-[175%] tracking-[-1%] text-Deep-nav ">
                     {section.heading}
                   </h3>
                   <span

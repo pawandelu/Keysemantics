@@ -12,7 +12,7 @@ const Footer = () => {
           src="/assets/bgfooter.png"
           alt=""
         />
-        <div className="text-center mt-24 z-20">
+        <div className="text-center lg:mt-24  z-20">
           <Heading heading={"How does KeySemantics work?"} vari={"ter"} />
           <Para
             paragraph={
@@ -21,7 +21,7 @@ const Footer = () => {
             vari={"qua"}
           />
         </div>
-        <form className="max-w-[320px] w-full gap-2 flex flex-col mt-16  z-20">
+        <form className="max-w-[320px] w-full gap-2 flex flex-col lg:mt-16 md:mt-12 sm:mt-8 mt-6  z-20">
           <input
             className="px-5 py-4 rounded-[48px] w-full font-normal text-[14px] leading-[143%] outline-none bg-light-blue text-light-purpl "
             type="text"
