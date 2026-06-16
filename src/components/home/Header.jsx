@@ -9,6 +9,7 @@ const Header = () => {
       <div className="absolute -top-80 -left-11 w-126 h-126 rounded-full bg-sky-cyan opacity-30 blur-[451.7px]"></div>
       <div className=" absolute top-19.5 left-89.75  rounded-full w-125.75 h-125.75 bg-dusty-purple opacity-20 blur-[451.7px] "></div>
       <div className=" absolute top-196 left-245.25 w-156.75 h-156.75 rounded-full bg-light-red opacity-20 blur-[403.8px]"></div>
+      <div className=" absolute top-99.5 left-340 w-103.5 h-103.5 rounded-full bg-light-yellow opacity-20 blur-[364.9px]"></div>
       <div className="max-w-300 mx-auto pt-11.75 min-h-225 bg-[url('/herbg.png')] md:bg-size-[400px_750px] bg-size-[300px_500px] bg-no-repeat bg-bottom  ">
         <div className="flex flex-row justify-between items-center">
           <img className="md:w-62 md:h-10 sm:w-55 sm:h-9 w-40 h-7 " src="/logos.webp" alt="" />

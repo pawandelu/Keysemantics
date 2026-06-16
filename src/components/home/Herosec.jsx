@@ -5,8 +5,8 @@ import Butten from "../common/Butten";
 
 const Herosec = () => {
   return (
-    <section className="px-4 py-20 max-md:py-12 bg-cloud-white mt-37">
-      <div className="max-w-300 mx-auto w-full flex flex-col gap-20 max-md:gap-12">
+    <section className="px-4 pt-28.5 max-md:pt-12 lg:pb-41 md:pb-20 pb-10 bg-cloud-white mt-37">
+      <div className="max-w-300 mx-auto w-full flex flex-col gap-37 max-md:gap-12">
         <div className="flex xl:flex-row flex-col gap-10 justify-between items-center">
           <div className="max-w-138 w-full max-xl:text-center">
             <Heading heading={"Headless federated search"} vari={"sec"} />

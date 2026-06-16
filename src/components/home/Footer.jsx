@@ -21,7 +21,7 @@ const Footer = () => {
             vari={"qua"}
           />
         </div>
-        <form  className="max-w-[320px] w-full gap-2 flex flex-col mt-16  z-20">
+        <form className="max-w-[320px] w-full gap-2 flex flex-col mt-16  z-20">
           <input
             className="px-5 py-4 rounded-[48px] w-full font-normal text-[14px] leading-[143%] outline-none bg-light-blue text-light-purpl "
             type="text"
@@ -73,4 +73,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer

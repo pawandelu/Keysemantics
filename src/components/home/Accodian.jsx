@@ -3,6 +3,7 @@ import Para from "../common/Para";
 import { ACCODION_DATA } from "../../utils/helper";
 import { useState } from "react";
 import Icons from "../common/Icons";
+import Butten from "../common/Butten";
 
 const Accodian = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -47,9 +48,12 @@ const Accodian = () => {
             {ACCODION_DATA.map((section, index) => (
               <div
                 key={index}
+                className={`border-b border-light-gray ${
+                  index === 0 ? "border-t" : ""
+                }`}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <div className="flex flex-row justify-between w-full border-t border-light-gray py-4 cursor-pointer">
+                <div className="flex flex-row justify-between w-full   border-light-gray py-4 cursor-pointer">
                   <h3 className="font-medium tex-[18px] w-full leading-[155%] tracking-[-1%] text-Deep-nav ">
                     {section.heading}
                   </h3>
@@ -87,6 +91,9 @@ const Accodian = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-6">
+            <Butten btn={"Get a demo"} vari={"pri"} />
           </div>
         </div>
       </div>
