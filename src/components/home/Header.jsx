@@ -1,0 +1,30 @@
+import React from "react";
+import Butten from "../common/Butten";
+import Heading from "../common/Heading";
+import Para from "../common/Para";
+
+const Header = () => {
+  return (
+    <section className="bg-cloud-white relative overflow-hidden px-4 ">
+      <div className="absolute -top-80 -left-11 w-126 h-126 rounded-full bg-sky-cyan opacity-30 blur-[451.7px]"></div>
+      <div className=" absolute top-19.5 left-89.75  rounded-full w-125.75 h-125.75 bg-dusty-purple opacity-20 blur-[451.7px] "></div>
+      <div className=" absolute top-196 left-245.25 w-156.75 h-156.75 rounded-full bg-light-red opacity-20 blur-[403.8px]"></div>
+      <div className="max-w-300 mx-auto pt-11.75 min-h-225 bg-[url('/herbg.png')] md:bg-size-[400px_750px] bg-size-[300px_500px] bg-no-repeat bg-bottom  ">
+        <div className="flex flex-row justify-between items-center">
+          <img className="md:w-62 md:h-10 sm:w-55 sm:h-9 w-40 h-7 " src="/logos.webp" alt="" />
+          <Butten btn={"Request a demo"} vari={"pri"} />
+        </div>
+        <div className="max-w-300 flex flex-col items-center">
+          <Heading heading={`AI-Powered Search as a Service`} vari={`pri`} />
+          <Para
+            paragraph={`Unlock your content with KeySemantics.`}
+            vari={"pri"}
+          />
+          <Butten btn={"Get started"} vari={`sec`} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Header;
