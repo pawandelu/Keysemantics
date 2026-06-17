@@ -12,11 +12,11 @@ const Accodian = () => {
     setOpenIndex(index);
   };
   return (
-    <section className="bg-cloud-white px-4 pt-114.5 -mt-81.75 -mb-75 pb-50">
+    <section className="bg-cloud-white px-4 md:pt-114.5 pt-100 -mt-81.75 md:-mb-75 -mb-50 pb-50">
       <div className="max-w-308 mx-auto flex xl:flex-row flex-col max-xl:items-center gap-12">
         <div>
           <img
-            className="max-w-150 w-full object-cover object-center h-84.25 "
+            className="max-w-150 w-full object-cover object-center h-auto "
             src="/desiner.webp"
             alt=""
           />

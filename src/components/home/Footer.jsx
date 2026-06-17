@@ -4,6 +4,7 @@ import Para from "../common/Para";
 import Butten from "../common/Butten";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="px-4 bg-Deep-nav -z-20  ">
       <div className="max-w-300 mx-auto flex items-center justify-center flex-col relative  ">
@@ -12,7 +13,7 @@ const Footer = () => {
           src="/assets/bgfooter.png"
           alt=""
         />
-        <div className="text-center lg:mt-24  z-20">
+        <div className="text-center lg:mt-24 md:mt-20 sm:mt-14 mt-8  z-20">
           <Heading heading={"How does KeySemantics work?"} vari={"ter"} />
           <Para
             paragraph={
@@ -59,11 +60,9 @@ const Footer = () => {
         />
       </div>
       <div className="bg-royal-midnight -mx-4 py-6 px-4">
-        <div className="max-w-300 mx-auto flex flex-row max-md:flex-col max-md: gap-4 max-md:text-center justify-between">
+        <div className="max-w-300 mx-auto flex flex-row max-md:flex-col max-md:gap-2 max-md:text-center justify-between">
           <Para
-            paragraph={
-              "©2024 KeySemantics GmbH | Ramsenburgweg 24, 9100 Herisau, Switzerland"
-            }
+            paragraph={`© ${currentYear} KeySemantics GmbH | Ramsenburgweg 24, 9100 Herisau, Switzerland`}
             vari={"sen"}
           />
           <Para paragraph={"info@keysemantics.ch"} vari={"sen"} />
@@ -73,4 +72,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;
